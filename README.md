@@ -33,9 +33,14 @@ curl https://shrouded-brook-60525.herokuapp.com/0
     -'react-scripts' is not recognized as a command error
     -attempted "npm install react-scripts --save"
         -installed scripts and ran npm run build successfully
-        
+-ISSUE: Fleek deployed, had error where webpage only displayed loading..
+    -discovered that tokenURI was NOT properly saved in NFT.json when NFT was minted
+    -ran truffle migration again.
+
 
 Output dump:
+
+first truffle dump:
 
 1_initial_migration.js
 ======================
@@ -89,3 +94,57 @@ Summary
 =======
 > Total deployments:   2
 > Final cost:          0.006394057520215384 ETH
+
+second truffle dump (attempted when fixing frontend):
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0xd94a9879cff946a7c4ea1bd3c1e703599e183558a5fc2c719f4d479210caa517
+   > Blocks: 1            Seconds: 20
+   > contract address:    0x78Fc2F611740a7F1013e46141c2Cb785A07d4906
+   > block number:        11632925
+   > block timestamp:     1639684342
+   > account:             0x6261A0E9d53EAa393B250F99D91FB6fABC62dd4E
+   > balance:             0.992570454976716656
+   > gas used:            245600 (0x3bf60)
+   > gas price:           2.500000007 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0006140000017192 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.0006140000017192 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'NFT'
+   ---------------
+   > transaction hash:    0x64d025bac00bcb9f79847dc018b0dbc88c487e773000de4d5282398febded091
+   > Blocks: 0            Seconds: 8
+   > contract address:    0xC3d2735a9F6F4917fbDA4301189dA9d92460FB47
+   > block number:        11632927
+   > block timestamp:     1639684395
+   > account:             0x6261A0E9d53EAa393B250F99D91FB6fABC62dd4E
+   > balance:             0.986647454960132256
+   > gas used:            2323287 (0x237357)
+   > gas price:           2.500000007 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005808217516263009 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.005808217516263009 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.006422217517982209 ETH
