@@ -1,5 +1,5 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const mnemonic = '';
+const mnemonic = 'tree load only angry carbon scene car fan mixture that ostrich come';
 
 /**
  * Use this file to configure your truffle project. It's seeded with some
@@ -62,14 +62,14 @@ module.exports = {
     // },
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    rinkeby: {
+    ropsten: {
       provider: () => new HDWalletProvider(
         mnemonic, 
-        'rinkeby url',
+        'https://ropsten.infura.io/v3/0155ad0fc013495cb3a581d8faff1f89',
         0,
         1
       ),
-      network_id: 4, //rinkeby
+      network_id: 3, //ropsten
       skipDryRun: true
     },
     // Useful for private networks
