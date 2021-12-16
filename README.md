@@ -27,6 +27,13 @@ curl https://shrouded-brook-60525.herokuapp.com/0
     -https://ropsten.infura.io/v3/0155ad0fc013495cb3a581d8faff1f89
 -truffle deploy completed
 
+2021-12-16 12:52:39
+-Setup Fleek
+-Tried to compile frontend with npm run build
+    -'react-scripts' is not recognized as a command error
+    -attempted "npm install react-scripts --save"
+        -installed scripts and ran npm run build successfully
+        
 
 Output dump:
 
