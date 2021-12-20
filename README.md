@@ -45,6 +45,13 @@ adding opensea link in ropsten to front end (opensea doesn't work with ropsten, 
 opensea link:
     https://opensea.io/assets/0x6261A0E9d53EAa393B250F99D91FB6fABC62dd4E
 
+FINISHED:
+final changes
+made a rinkeby branch to mint a rinkeby token
+created opensea link with rinkeby branch
+added rinkeby link to ropsten address so link can be clicked
+
+
 
 truffle migrate --reset --network [NetworkName]
 Output dump:
@@ -158,3 +165,89 @@ Summary
 =======
 > Total deployments:   2
 > Final cost:          0.006422217517982209 ETH
+
+rinkeby migrate
+
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\Migrations.sol
+> Compiling .\contracts\NFT.sol
+> Compiling .\contracts\NFT.sol
+> Compilation warnings encountered:
+
+    Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> project:/contracts/NFT.sol
+
+,Warning: Function state mutability can be restricted to pure
+  --> project:/contracts/NFT.sol:19:3:
+   |
+19 |   function _baseURI() internal view override returns (string memory) {
+   |   ^ (Relevant source part starts here and spans across multiple lines).
+
+
+> Artifacts written to D:\Code\318-create-nft\frontend\src\contracts
+> Compiled successfully using:
+   - solc: 0.8.0+commit.c7dfd78e.Emscripten.clang
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x0b0ba19f4103444abd93526b6b9dee4515a24164cd53aeccb40553d9e5884e28
+   > Blocks: 0            Seconds: 4
+   > contract address:    0x44C61B697F89Cc039e5FfC6Cc624DA4CD25aebcc
+   > block number:        9844671
+   > block timestamp:     1639964820
+   > account:             0x6261A0E9d53EAa393B250F99D91FB6fABC62dd4E
+   > balance:             2.9993859999980352
+   > gas used:            245600 (0x3bf60)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0006140000019648 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.0006140000019648 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'NFT'
+   ---------------
+   > transaction hash:    0xd09737b49a6e130b623f7253a7ed0140192fd180aa56071d00441f92047cea53
+   > Blocks: 1            Seconds: 12
+   > contract address:    0x4Ea7fD0C3c3072854787785410612B37Df52B9F6
+   > block number:        9844673
+   > block timestamp:     1639964850
+   > account:             0x6261A0E9d53EAa393B250F99D91FB6fABC62dd4E
+   > balance:             2.993388857478844344
+   > gas used:            2352944 (0x23e730)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005882360018823552 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.005882360018823552 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.006496360020788352 ETH
