@@ -42,6 +42,9 @@ image hash:
     BA4F21DA16BD11B052A8F709A88551A34787DE2FB33C6F455EF3AF27CEA9D609
 
 adding opensea link in ropsten to front end (opensea doesn't work with ropsten, adding link to page anyways)
+opensea link:
+    https://opensea.io/assets/0x6261A0E9d53EAa393B250F99D91FB6fABC62dd4E
+    
 
 
 Output dump:
