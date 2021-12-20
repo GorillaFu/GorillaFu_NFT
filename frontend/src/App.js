@@ -8,9 +8,15 @@ function App() {
   useEffect(() => {
     const init = async () => {
       const { nft } = await getBlockchain();
+      console.log(nft);
+      console.log('nft');
       const tokenURI = await nft.tokenURI(0);
+      console.log('tokenURI');
+      console.log(tokenURI);
       const { data } = await axios.get(tokenURI);
       setTokenInfo(data.result);
+      console.log("datarslt")
+      console.log(data.result);
     };
     init();
   }, []);
