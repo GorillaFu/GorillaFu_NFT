@@ -19,5 +19,7 @@ contract NFT is ERC721 {
   function _baseURI() internal view override returns (string memory) {
     return 'https://shrouded-brook-60525.herokuapp.com/';
   }
-
+  function imghash() public pure returns (string memory) {
+    return 'BA4F21DA16BD11B052A8F709A88551A34787DE2FB33C6F455EF3AF27CEA9D609';
+  }
 }
