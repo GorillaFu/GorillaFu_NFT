@@ -37,6 +37,12 @@ curl https://shrouded-brook-60525.herokuapp.com/0
     -discovered that tokenURI was NOT properly saved in NFT.json when NFT was minted
     -ran truffle migration again.
 
+Added function to check the hash of the image in smart contract
+image hash:
+    BA4F21DA16BD11B052A8F709A88551A34787DE2FB33C6F455EF3AF27CEA9D609
+
+adding opensea link in ropsten to front end (opensea doesn't work with ropsten, adding link to page anyways)
+
 
 Output dump:
 
@@ -96,6 +102,7 @@ Summary
 > Final cost:          0.006394057520215384 ETH
 
 second truffle dump (attempted when fixing frontend):
+
 1_initial_migration.js
 ======================
 
