@@ -81,6 +81,7 @@ module.exports = {
       ),
       network_id: 4, //ropsten
       skipDryRun: true
+      },
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),

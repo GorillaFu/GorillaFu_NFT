@@ -44,9 +44,9 @@ image hash:
 adding opensea link in ropsten to front end (opensea doesn't work with ropsten, adding link to page anyways)
 opensea link:
     https://opensea.io/assets/0x6261A0E9d53EAa393B250F99D91FB6fABC62dd4E
-    
 
 
+truffle migrate --reset --network [NetworkName]
 Output dump:
 
 first truffle dump:
