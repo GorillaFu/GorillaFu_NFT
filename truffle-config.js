@@ -72,6 +72,15 @@ module.exports = {
       network_id: 3, //ropsten
       skipDryRun: true
     },
+    rinkeby: {
+      provider: () => new HDWalletProvider(
+        mnemonic, 
+        'https://rinkeby.infura.io/v3/0155ad0fc013495cb3a581d8faff1f89',
+        0,
+        1
+      ),
+      network_id: 4, //ropsten
+      skipDryRun: true
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
